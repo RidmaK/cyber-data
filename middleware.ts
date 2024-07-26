@@ -1,8 +1,6 @@
 import { NextRequest, NextResponse } from 'next/server';
 
 export function middleware(request: NextRequest) {
-  // Log request URL for debugging
-  console.log("Request URL:", request.url);
 
   // Get token from cookies
   const token = request.cookies.get('ACCESS_TOKEN');

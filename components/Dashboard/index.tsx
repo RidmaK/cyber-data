@@ -192,9 +192,6 @@ export default function Dashboard() {
                 <div className={`${styles['chart-div']} ${styles.card}`}>
                     <PolarAreaChart loading={loading} data={securityData} />
                 </div>
-                <div className={`${styles['chart-div']} ${styles.card}`}>
-                    <BubbleChart loading={loading} data={securityData} />
-                </div>
             </div>
         </div>
     );
