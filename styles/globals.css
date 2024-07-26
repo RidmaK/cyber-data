@@ -32,7 +32,7 @@ body {
 }
 
 input,
-textarea {
+textarea,select {
     outline: 0;
     background: #ffffff;
     width: 100%;
@@ -44,7 +44,8 @@ textarea {
 }
 
 input:focus,
-textarea:focus {
+textarea:focus,
+select:focus {
     border-color: #5b08a7;
 }
 
@@ -193,9 +194,8 @@ textarea:focus {
 
 .success {
     position: absolute;
-    top: -40px;
+    top: 10px;
     /* Adjust as per your layout */
-    left: 60px;
     /* Adjust as per your layout */
     background-color: #4caf50;
     color: white;
@@ -353,7 +353,7 @@ textarea:focus {
     }
 
 
-    input {
+    input,select {
         padding: 15px;
         font-size: 14px;
     }
@@ -384,7 +384,7 @@ textarea:focus {
         font-size: 14px;
     }
 
-    input {
+    input,select {
         padding: 14px;
         font-size: 14px;
     }
@@ -424,7 +424,7 @@ textarea:focus {
         font-size: 13px;
     }
 
-    input {
+    input,select {
         padding: 12px;
         font-size: 13px;
     }
@@ -481,7 +481,7 @@ textarea:focus {
         font-size: 12px;
     }
 
-    input {
+    input,select {
         padding: 10px;
         font-size: 12px;
     }

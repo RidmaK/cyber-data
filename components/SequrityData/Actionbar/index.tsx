@@ -45,6 +45,20 @@ export default function Actionbar({
     }
   }, [securityDataId]);
 
+  useEffect(() => {
+    // Prevent background scroll when the action bar is open
+    if (isOpenAction || isDrawerOpen) {
+      document.body.style.overflow = "hidden";
+    } else {
+      document.body.style.overflow = "auto";
+    }
+
+    // Cleanup function to reset the overflow on unmount
+    return () => {
+      document.body.style.overflow = "auto";
+    };
+  }, [isOpenAction, isDrawerOpen]);
+
   const showMore = () => {
     setIsDrawerOpen(true);
   };
@@ -55,6 +69,7 @@ export default function Actionbar({
 
   return (
     <>
+      {isOpenAction && <div className={styles["blur-background"]}></div>} {/* Add the blur background */}
       <div className={styles["actionBar-background"]}>
         <aside
           className={`${styles.sidebar} ${

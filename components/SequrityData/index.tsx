@@ -59,7 +59,7 @@ export default function SequrityData() {
                 type="create"
             />
             {notification && (
-                <div className={styles.success}>
+                <div className="success">
                     <p>{notification}</p>
                 </div>
             )}

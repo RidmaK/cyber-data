@@ -78,6 +78,17 @@
     background-color: rgba(0, 0, 0, 0.2);
 }
 
+.blur-background {
+  position: fixed; /* Make it cover the entire viewport */
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
+  backdrop-filter: blur(5px); /* Adjust blur strength */
+  z-index: 1002; /* Below the sidebar */
+}
+
 /* Media Queries */
 
 /* Medium devices (tablets, 600px to 768px) */
