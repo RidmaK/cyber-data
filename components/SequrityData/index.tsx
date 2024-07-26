@@ -45,7 +45,7 @@ export default function SequrityData() {
                     alignItems: "center",
                 }}
             >
-                <h1>Security Data </h1>
+                <h3>Security Data </h3>
                 <Link href="#" className={styles['btn-add']} onClick={() => openActionView()}>
                     <FaPlus />
                 </Link>

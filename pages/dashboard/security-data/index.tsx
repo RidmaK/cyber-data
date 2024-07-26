@@ -3,7 +3,7 @@ import SequrityData from "@/components/SequrityData";
 const SequrityDataPage = () => {
   return (
     
-     <> <SequrityData /></>
+    <SequrityData />
       
   );
 };
