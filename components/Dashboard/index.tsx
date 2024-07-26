@@ -174,22 +174,22 @@ export default function Dashboard() {
                 </div>
             </div>
             <div className={styles['component-div']}>
-                <div className={`${styles['chart-div']} ${styles.card}`}>
+                <div className={`${styles['chart-div']} card`}>
                     <BarChart loading={loading} data={securityData} />
                 </div>
-                <div className={`${styles['chart-div']} ${styles.card}`}>
+                <div className={`${styles['chart-div']} card`}>
                     <LineChart loading={loading} data={securityData} />
                 </div>
-                <div className={`${styles['chart-div']} ${styles.card}`}>
+                <div className={`${styles['chart-div']} card`}>
                     <RadarChart loading={loading} data={securityData} />
                 </div>
-                <div className={`${styles['chart-div']} ${styles.card}`}>
+                <div className={`${styles['chart-div']} card`}>
                     <DoughnutChart loading={loading} data={securityData} />
                 </div>
-                <div className={`${styles['chart-div']} ${styles.card}`}>
+                <div className={`${styles['chart-div']} card`}>
                     <PieChart loading={loading} data={securityData} />
                 </div>
-                <div className={`${styles['chart-div']} ${styles.card}`}>
+                <div className={`${styles['chart-div']} card`}>
                     <PolarAreaChart loading={loading} data={securityData} />
                 </div>
             </div>

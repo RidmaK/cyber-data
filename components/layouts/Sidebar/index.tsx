@@ -25,22 +25,33 @@ export default function Sidebar({
         className={`${styles.sidebar} ${isOpen ? styles.open : styles.close}`}
         ref={sidebarRef}
       >
-        <div className={styles['brand-section']}>
-          <div className={styles.brand}>IM</div>
+        <div className={styles["brand-section"]}>
+          <div className={styles.brand}>SD</div>
           <div>
-            <button className={styles['sidebar-toggle']} onClick={toggleSidebar}>
+            <button
+              className={styles["sidebar-toggle"]}
+              onClick={toggleSidebar}
+            >
               ☰
             </button>
           </div>
         </div>
-        <Link href="/dashboard" className={`${styles['sidebar-link']} ${isActive("/dashboard")}`}>
+        <Link
+          href="/dashboard"
+          className={`${styles["sidebar-link"]} ${isActive("/dashboard")}`}
+        >
           Dashboard
         </Link>
         {/* <Link href="/users" className={`${styles['sidebar-link']} ${isActive("/users")}`}>
           Users
         </Link> */}
-        <Link href="/dashboard/sequrity-data" className={`${styles['sidebar-link']} ${isActive("/dashboard/sequrity-data")}`}>
-          Sequrity Data
+        <Link
+          href="/dashboard/security-data"
+          className={`${styles["sidebar-link"]} ${isActive(
+            "/dashboard/security-data"
+          )}`}
+        >
+          Security Data
         </Link>
       </aside>
     </div>

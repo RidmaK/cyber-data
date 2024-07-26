@@ -163,6 +163,15 @@ textarea:focus {
     border-collapse: collapse;
 }
 
+#users-table .user-action-link {
+    text-decoration: none;
+    font-weight: 800;
+}
+
+#users-table .user-action-link:hover {
+    color: blueviolet;
+}
+
 #users-table th,
 #users-table td {
     padding: 8px 12px;
