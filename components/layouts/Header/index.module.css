@@ -78,7 +78,7 @@
   z-index: 1001;
 }
 
-button .sidebarToggleDark {
+ .sidebarToggleDark {
   background: none;
   border: none;
   color: black;

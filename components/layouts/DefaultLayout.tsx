@@ -54,7 +54,6 @@ export default function DefaultLayout({ children }: GuestLayoutProps) {
 
     axiosClient.post("/logout")
       .then(() => {
-        setUser({ name: "" });
         setToken(null);
         Cookies.remove('ACCESS_TOKEN');
         route.push('/auth/login')

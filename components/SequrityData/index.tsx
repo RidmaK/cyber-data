@@ -56,7 +56,7 @@ export default function SequrityData() {
             <Actionbar
                 isOpenAction={isOpenAction}
                 actionBarRef={actionBarRef}
-                type={formType}
+                type="create"
             />
             {notification && (
                 <div className={styles.success}>
