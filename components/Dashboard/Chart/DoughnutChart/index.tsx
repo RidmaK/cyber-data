@@ -11,17 +11,17 @@ export default function DoughnutChart({ data, loading }: Props) {
         return <div className="loading">Loading ....</div>;
     }
 
-    // Group incidents by status
-    const incidentStatusCounts: { [key: string]: number } = data.reduce((acc: any, incident: any) => {
-        acc[incident.status] = (acc[incident.status] || 0) + 1;
+    // Group incidents by severities
+    const incidentSeverityCounts: { [key: string]: number } = data.reduce((acc: any, incident: any) => {
+        acc[incident.severity] = (acc[incident.severity] || 0) + 1;
         return acc;
     }, {});
 
-    const statuses = Object.keys(incidentStatusCounts);
-    const counts = Object.values(incidentStatusCounts);
+    const severities = Object.keys(incidentSeverityCounts);
+    const counts = Object.values(incidentSeverityCounts);
 
     const chartData = {
-        labels: statuses,
+        labels: severities,
         datasets: [
             {
                 label: 'Incident Status',
