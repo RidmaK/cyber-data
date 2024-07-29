@@ -110,7 +110,7 @@ export default function Dashboard() {
               <span
                 className={` ${styles["caption-12"]} ${styles["c-dashboardInfo__count"]}`}
               >
-                {loading ? "" : totalIncidents}
+                {loading ? "0" : totalIncidents}
               </span>
             </div>
           </div>
@@ -134,7 +134,7 @@ export default function Dashboard() {
               <span
                 className={` ${styles["caption-12"]} ${styles["c-dashboardInfo__count"]}`}
               >
-                {loading ? "" : resolvedIncidents}
+                {loading ? "0" : resolvedIncidents}
               </span>
             </div>
           </div>
@@ -158,7 +158,7 @@ export default function Dashboard() {
               <span
                 className={` ${styles["caption-12"]} ${styles["c-dashboardInfo__count"]}`}
               >
-                {loading ? "" : criticalIncidents}
+                {loading ? "0" : criticalIncidents}
               </span>
             </div>
           </div>
@@ -182,7 +182,7 @@ export default function Dashboard() {
               <span
                 className={` ${styles["caption-12"]}  ${styles["c-dashboardInfo__count"]}`}
               >
-                {loading ? "" : `${averageResponseTime}mins`}
+                {loading ? "0" : `${averageResponseTime}mins`}
               </span>
             </div>
           </div>
